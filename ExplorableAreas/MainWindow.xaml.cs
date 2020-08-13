@@ -20,9 +20,50 @@ namespace ExplorableAreas
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Location> locations = new List<Location>();
+
+
         public MainWindow()
         {
             InitializeComponent();
         }
+        private void Strat()
+        {
+            SetUpLocation();
+        }
+
+        //set up locations
+        private void SetUpLocation()
+        {
+            locations.Add(new Location("loc a", "des a"));
+            locations.Add(new Location("loc b", "des b"));
+            locations.Add(new Location("loc c", "des c"));
+
+            currentLocation = locations[0];
+        }
+
+        private void ShowLocationsMenu()
+        {
+            string temp = "";
+
+            foreach(Location location in locations)
+            {
+                temp += location.Name + "\n";                
+            }
+           LocationMenu.Text = temp
+        }
+
+        private void Travel()
+        {
+            LocationName.Text
+        }
+
+
     }
+
+
+
+
+
+
 }

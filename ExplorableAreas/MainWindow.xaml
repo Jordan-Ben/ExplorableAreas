@@ -8,8 +8,8 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Rectangle x:Name="MainBarMatt" HorizontalAlignment="Center" Height="118" Margin="0,308,0,0" Stroke="Black" VerticalAlignment="Top" Width="780" Fill="#FFC482F1"/>
-        <ScrollViewer Margin="105,37,448,165" Background="#FFE05757">
-            <TextBlock Text="TextBlock" TextWrapping="Wrap" Height="222" Width="219" Background="#FFDCA6A6"/>
+        <ScrollViewer Margin="10,10,543,192" Background="#FFE05757">
+            <TextBlock Text="TextBlock" TextWrapping="Wrap" Height="222" Width="220" Background="#FFDCA6A6"/>
         </ScrollViewer>
         <TextBlock HorizontalAlignment="Left" Height="0" Margin="352,138,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Width="131"/>
 
