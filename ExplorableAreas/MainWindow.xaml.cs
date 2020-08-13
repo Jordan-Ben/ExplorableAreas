@@ -21,6 +21,7 @@ namespace ExplorableAreas
     public partial class MainWindow : Window
     {
         List<Location> locations = new List<Location>();
+        Location currentLocation = new Location();
 
 
         public MainWindow()
@@ -30,6 +31,8 @@ namespace ExplorableAreas
         private void Start()
         {
             SetUpLocation();
+            ShowLocationsMenu();
+            Travel();
         }
 
         //set up locations
@@ -50,22 +53,31 @@ namespace ExplorableAreas
             {
                 temp += location.Name + "\n";                
             }
-           LocationMenu.Text = temp
+            LocationMenu.Text = temp;
         }
 
         private void Travel()
         {
             LocationNameTextBlock.Text = currentLocation.Name;
+            LocationDescriptionTextBlock.Text = currentLocation.Description;
         }
 
-        private void Travel_Click(object sender, RoutedEventArgs e)
+        private void TravelButton_Click(object sender, RoutedEventArgs e)
         {
             string location = TravelLocationTextBox.Text;
             location = location.ToLower();
 
             if(location != "")
             {
-                foreach 
+                foreach (Location l in locations)
+                {
+                    if(l.Name.ToLower().Contains(location))
+                    {
+                        currentLocation = l;
+                        Travel();
+   
+                    }
+                }
             }
         }
     }
