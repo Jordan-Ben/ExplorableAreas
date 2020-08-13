@@ -27,6 +27,7 @@ namespace ExplorableAreas
         public MainWindow()
         {
             InitializeComponent();
+            Start();
         }
         private void Start()
         {
@@ -41,6 +42,7 @@ namespace ExplorableAreas
             locations.Add(new Location("loc a", "des a"));
             locations.Add(new Location("loc b", "des b"));
             locations.Add(new Location("loc c", "des c"));
+            locations.Add(new Location("loc d", "des d"));
 
             currentLocation = locations[0];
         }
@@ -48,12 +50,11 @@ namespace ExplorableAreas
         private void ShowLocationsMenu()
         {
             string temp = "";
-
             foreach(Location location in locations)
             {
-                temp += location.Name + "\n";                
+              temp+= location.Name + "\n";                
             }
-            LocationMenu.Text = temp;
+            LocationMenuTextBlock.Text = temp;
         }
 
         private void Travel()
