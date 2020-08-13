@@ -27,7 +27,7 @@ namespace ExplorableAreas
         {
             InitializeComponent();
         }
-        private void Strat()
+        private void Start()
         {
             SetUpLocation();
         }
@@ -55,10 +55,19 @@ namespace ExplorableAreas
 
         private void Travel()
         {
-            LocationName.Text
+            LocationNameTextBlock.Text = currentLocation.Name;
         }
 
+        private void Travel_Click(object sender, RoutedEventArgs e)
+        {
+            string location = TravelLocationTextBox.Text;
+            location = location.ToLower();
 
+            if(location != "")
+            {
+                foreach 
+            }
+        }
     }
 
 
