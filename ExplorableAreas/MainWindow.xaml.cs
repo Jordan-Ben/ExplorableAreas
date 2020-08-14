@@ -17,6 +17,8 @@ namespace ExplorableAreas
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
+    /// Jordan Benson's GUI Explorable Areas
+    /// Janell Baxter's code assistance used
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -39,7 +41,7 @@ namespace ExplorableAreas
         //set up locations
         private void SetUpLocation()
         {
-            locations.Add(new Location("loc a", "des a"));
+            locations.Add(new Location("Flying Forest", "A forest with Opium in the air"));
             locations.Add(new Location("loc b", "des b"));
             locations.Add(new Location("loc c", "des c"));
             locations.Add(new Location("loc d", "des d"));

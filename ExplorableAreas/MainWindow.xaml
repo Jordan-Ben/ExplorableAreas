@@ -11,11 +11,12 @@
         <ScrollViewer x:Name="LocationMenuScroll" Margin="10,10,543,276" Background="#FFE05757">
             <TextBlock x:Name="LocationMenuTextBlock" TextWrapping="Wrap" Height="138" Width="188" Background="#FFDCA6A6"/>
         </ScrollViewer>
-        <TextBlock x:Name="LocationDescriptionTextBlock" HorizontalAlignment="Left" Height="117" Margin="600,100,0,0" Text="Des" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" Background="#FFD93939"/>
-        <TextBlock x:Name="LocationNameTextBlock" HorizontalAlignment="Left" Height="58" Margin="551,15,0,0" Text="  Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FF11A945"/>
+        <TextBlock x:Name="LocationDescriptionTextBlock" HorizontalAlignment="Left" Height="117" Margin="597,191,0,0" Text="Des" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" Background="#FFD93939"/>
+        <TextBlock x:Name="LocationNameTextBlock" HorizontalAlignment="Left" Height="58" Margin="425,174,0,0" Text="  Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FF11A945"/>
         <Button x:Name="TravelButton" Content="Travel" HorizontalAlignment="Left" Height="37" Margin="38,251,0,0" VerticalAlignment="Top" Width="154" Click="TravelButton_Click"/>
         <TextBox x:Name="TravelLocationTextBox" HorizontalAlignment="Left" Height="29" Margin="38,217,0,0" Text="TravelLoc" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
-        <Image x:Name="Flower" HorizontalAlignment="Left" Height="102" Margin="331,138,0,0" VerticalAlignment="Top" Width="152" Source="/flower.png"/>
+        <Image x:Name="Flower" HorizontalAlignment="Left" Height="102" Margin="273,147,0,0" VerticalAlignment="Top" Width="152" Source="/flower.png"/>
+        <Image x:Name="LocationImage" HorizontalAlignment="Left" Height="44" Margin="556,27,0,0" VerticalAlignment="Top" Width="177"/>
 
     </Grid>
 </Window>
