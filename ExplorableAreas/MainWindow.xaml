@@ -15,8 +15,8 @@
         <TextBlock x:Name="LocationNameTextBlock" HorizontalAlignment="Left" Height="58" Margin="425,174,0,0" Text="  Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FF11A945"/>
         <Button x:Name="TravelButton" Content="Travel" HorizontalAlignment="Left" Height="37" Margin="38,251,0,0" VerticalAlignment="Top" Width="154" Click="TravelButton_Click"/>
         <TextBox x:Name="TravelLocationTextBox" HorizontalAlignment="Left" Height="29" Margin="38,217,0,0" Text="TravelLoc" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
-        <Image x:Name="Flower" HorizontalAlignment="Left" Height="102" Margin="273,147,0,0" VerticalAlignment="Top" Width="152" Source="/flower.png"/>
-        <Image x:Name="LocationImageBox" HorizontalAlignment="Left" Height="145" Margin="449,27,0,0" VerticalAlignment="Top" Width="284"/>
+        <Image x:Name="Flower" HorizontalAlignment="Center" Height="155" Margin="0,155,0,0" VerticalAlignment="Top" Width="330" Source="/Images/flower.png" Stretch="None"/>
+        <Image x:Name="LocationImageBox" HorizontalAlignment="Left" Height="145" Margin="449,27,0,0" VerticalAlignment="Top" Width="284" />
 
     </Grid>
 </Window>

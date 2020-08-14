@@ -41,8 +41,8 @@ namespace ExplorableAreas
         //set up locations
         private void SetUpLocation()
         {
-            locations.Add(new Location("Flying Forest", "A forest with Opium in the air"));
-            locations.Add(new Location("loc b", "des b"));
+            locations.Add(new Location("Flying Forest", "A forest with Opium in the air", "Images/Forest.bmp"));
+            locations.Add(new Location("loc b", "des b", "Images/flower.png"));
             locations.Add(new Location("loc c", "des c"));
             locations.Add(new Location("loc d", "des d"));
 
