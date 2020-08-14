@@ -63,6 +63,7 @@ namespace ExplorableAreas
         {
             LocationNameTextBlock.Text = currentLocation.Name;
             LocationDescriptionTextBlock.Text = currentLocation.Description;
+            LocationImageBox.Source = currentLocation.ShowLocationImage();
         }
 
         private void TravelButton_Click(object sender, RoutedEventArgs e)
