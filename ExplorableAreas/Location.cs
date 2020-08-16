@@ -35,10 +35,7 @@ namespace ExplorableAreas
 
         }
 
-        public BitmapImage ShowLocationImage ()
-        {
-            return new BitmapImage(new Uri(LocationPath, UriKind.Relative));
-        }
+        
 
     }
 }

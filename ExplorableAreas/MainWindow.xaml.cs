@@ -41,9 +41,9 @@ namespace ExplorableAreas
         //set up locations
         private void SetUpLocation()
         {
-            locations.Add(new Location("Flying Forest", "A forest with Opium in the air", "Images/Forest.bmp"));
-            locations.Add(new Location("loc b", "des b", "Images/flower.png"));
-            locations.Add(new Location("loc c", "des c"));
+            locations.Add(new Location("River", "A tranquil river with a stone riverbed"));
+            locations.Add(new Location("Sandy Shore", "A soft white beach surrounded by a forrest."));
+            locations.Add(new Location("j", "hj "));
             locations.Add(new Location("loc d", "des d"));
 
             currentLocation = locations[0];
@@ -63,7 +63,8 @@ namespace ExplorableAreas
         {
             LocationNameTextBlock.Text = currentLocation.Name;
             LocationDescriptionTextBlock.Text = currentLocation.Description;
-            LocationImageBox.Source = currentLocation.ShowLocationImage();
+            TravelLocationTextBox.Text = "";
+            
         }
 
         private void TravelButton_Click(object sender, RoutedEventArgs e)
