@@ -5,18 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExplorableAreas"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid x:Name="MainMat">
-        <Rectangle x:Name="MainBarMat" HorizontalAlignment="Center" Height="118" Margin="0,308,0,0" Stroke="Black" VerticalAlignment="Top" Width="780" Fill="#FFC482F1"/>
-        <ScrollViewer x:Name="LocationMenuScroll" Margin="10,10,543,276" Background="#FFE05757">
-            <TextBlock x:Name="LocationMenuTextBlock" TextWrapping="Wrap" Height="138" Width="188" Background="#FFDCA6A6"/>
+        Title="MainWindow" Height="532" Width="800">
+    <Grid x:Name="MainMat" Height="522">
+        <Rectangle x:Name="RectangleMat" HorizontalAlignment="Left" Height="118" Margin="10,307,0,0" Stroke="Black" VerticalAlignment="Top" Width="135" Fill="#FF54A9E4"/>
+        <Rectangle x:Name="MainBarMat" HorizontalAlignment="Left" Height="138" Margin="7,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="141" Fill="#FFC482F1" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <ScrollViewer x:Name="LocationMenuScroll" Margin="8,150,655,218" Background="#FFA3D7FB">
+            <TextBlock x:Name="LocationMenuTextBlock" TextWrapping="Wrap" Height="150" Width="118" Background="#FFA6D1F0"/>
         </ScrollViewer>
-        <TextBlock x:Name="LocationDescriptionTextBlock" HorizontalAlignment="Left" Height="117" Margin="597,191,0,0" Text="Des" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" Background="#FFD93939"/>
+        <TextBlock x:Name="LocationDescriptionTextBlock" HorizontalAlignment="Left" Height="118" Margin="597,144,0,0" Text="Des" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" Background="#FFD93939"/>
         <TextBlock x:Name="LocationNameTextBlock" HorizontalAlignment="Left" Height="58" Margin="425,174,0,0" Text="  Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FF11A945"/>
-        <Button x:Name="TravelButton" Content="Travel" HorizontalAlignment="Left" Height="37" Margin="38,251,0,0" VerticalAlignment="Top" Width="154" Click="TravelButton_Click"/>
-        <TextBox x:Name="TravelLocationTextBox" HorizontalAlignment="Left" Height="29" Margin="38,217,0,0" Text="TravelLoc" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
-        <Image x:Name="Flower" HorizontalAlignment="Center" Height="155" Margin="0,155,0,0" VerticalAlignment="Top" Width="330" Source="/Images/flower.png" Stretch="None"/>
-        <Image x:Name="LocationImageBox" HorizontalAlignment="Left" Height="145" Margin="449,27,0,0" VerticalAlignment="Top" Width="284" />
+        <Button x:Name="TravelButton" Content="Travel" HorizontalAlignment="Left" Height="26" Margin="69,383,0,0" VerticalAlignment="Top" Width="69" Click="TravelButton_Click"/>
+        <TextBox x:Name="TravelLocationTextBox" HorizontalAlignment="Left" Height="27" Margin="15,350,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126"/>
+        <TextBlock x:Name="TravelDirectionBox" HorizontalAlignment="Left" Height="29" Margin="15,314,0,0" Text="Enter travel location below. Click Travel" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" Background="#FFBFDEF3" FontSize="10" TextAlignment="Center"/>
 
     </Grid>
 </Window>

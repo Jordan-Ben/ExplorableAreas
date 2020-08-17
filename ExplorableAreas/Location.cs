@@ -9,7 +9,7 @@ namespace ExplorableAreas
     {
         public string Name;
         public string Description;
-        public string LocationPath = "Images/Bitmap1.bmp";
+        
 
         public List<Player> People = new List<Player>();
 
@@ -24,21 +24,8 @@ namespace ExplorableAreas
         
         }
 
-        public Location(string name, string description, string locationpath)
-        {
-            Name = name;
-            Description = description;
-            LocationPath = locationpath;
+        
 
-
-            People.Add(new Player("Todd", "Todd :( "));
-
-        }
-
-        public BitmapImage ShowLocationImage ()
-        {
-            return new BitmapImage(new Uri(LocationPath, UriKind.Relative));
-        }
-
+        
     }
 }
