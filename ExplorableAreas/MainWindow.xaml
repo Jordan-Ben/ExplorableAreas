@@ -21,8 +21,8 @@
         <ScrollViewer x:Name="LocationMenuScroll" Margin="8,150,655,218" Background="#FFA3D7FB">
             <TextBlock x:Name="LocationMenuTextBlock" TextWrapping="Wrap" Height="150" Width="118" Background="#FFA6D1F0"/>
         </ScrollViewer>
-        <TextBlock x:Name="LocationDescriptionTextBlock" HorizontalAlignment="Left" Height="118" Margin="597,144,0,0" Text="Des" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" Background="#FFD93939"/>
-        <TextBlock x:Name="LocationNameTextBlock" HorizontalAlignment="Left" Height="58" Margin="425,174,0,0" Text="  Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FF11A945"/>
+        <TextBlock x:Name="LocationDescriptionTextBlock" HorizontalAlignment="Left" Height="118" Margin="400,179,0,0" Text="Des" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" Background="#FFD93939"/>
+        <TextBlock x:Name="LocationNameTextBlock" HorizontalAlignment="Left" Height="58" Margin="289,116,0,0" Text="  Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FF11A945"/>
         <Button x:Name="TravelButton" Content="Travel" HorizontalAlignment="Left" Height="26" Margin="69,383,0,0" VerticalAlignment="Top" Width="69" Click="TravelButton_Click"/>
         <TextBox x:Name="TravelLocationTextBox" HorizontalAlignment="Left" Height="27" Margin="15,350,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126"/>
         <TextBlock x:Name="TravelDirectionBox" HorizontalAlignment="Left" Height="29" Margin="15,314,0,0" Text="Enter travel location below. Click Travel" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" Background="#FFBFDEF3" FontSize="10" TextAlignment="Center"/>
